@@ -1,0 +1,46 @@
+/* Портфолио */
+.works {
+    padding: 80px 0;
+}
+
+.works h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.work-card {
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: transform 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+.work-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.work-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

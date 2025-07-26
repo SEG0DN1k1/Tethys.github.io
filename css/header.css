@@ -1,0 +1,89 @@
+/* Шапка */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phone-number {
+    display: block; /* Виден на десктопе */
+    font-weight: 500;
+}
+
+.phone-icon {
+    display: none; /* По умолчанию скрыта */
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Адаптация шапки для мобильных */
+@media (min-width: 1201px) {
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0 15px;
+    }
+
+    .phone-number {
+        display: none;
+    }
+
+    .phone-icon {
+        display: flex;
+    }
+
+    .phone-icon:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+}

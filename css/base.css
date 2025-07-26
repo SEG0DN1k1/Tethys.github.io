@@ -1,0 +1,42 @@
+/* Базовые стили */
+:root {
+    --bg-light: #ffffff;
+    --text-light: #000000;
+    --bg-dark: #1a1a1a;
+    --text-dark: #ffffff;
+    --accent: #e10000;
+    --shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Контейнеры */
+.container {
+    width: 90%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Автоматическое определение темы */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: var(--bg-dark);
+        --text-primary: var(--text-dark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-primary: var(--bg-light);
+        --text-primary: var(--text-light);
+    }
+}
