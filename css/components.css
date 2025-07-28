@@ -13,11 +13,11 @@
     cursor: pointer;
 }
 
-    .cta-button:hover {
-        background: #e03c3c;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
+.cta-button:hover {
+    background: #e03c3c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
 /* Списки */
 ul, ol {

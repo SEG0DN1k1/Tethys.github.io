@@ -5,7 +5,6 @@
     --bg-dark: #1a1a1a;
     --text-dark: #ffffff;
     --accent: #e10000;
-    --shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
 
 body {
@@ -21,7 +20,6 @@ body {
 /* Контейнеры */
 .container {
     width: 90%;
-    width: auto;
     margin: 0 auto;
     padding: 0 15px;
 }

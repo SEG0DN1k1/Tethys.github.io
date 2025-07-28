@@ -8,6 +8,7 @@
     color: var(--text-primary) !important;
     box-shadow: var(--shadow);
     z-index: 1000;
+    padding: 10px 0;
 }
 
 .header .container {
