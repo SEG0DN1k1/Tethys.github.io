@@ -15,12 +15,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-primary);
     z-index: 1000;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     user-select: none;
-    outline: none;
+    outline: 2px solid rgb(255, 106, 0);
 }
 
     .back-to-top:hover {
@@ -39,5 +39,4 @@
 
 /* Адаптация для мобильных */
 @media (max-width: 768px) {
-    
 }

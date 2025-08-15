@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tethys</title>
+    <link rel="stylesheet" href="css/pulse-border.css">
+    <link rel="stylesheet" href="css/slide-in-blurred-bottom.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -17,6 +19,7 @@
 </head>
 
 <body>
+    <div class="pulse-border"></div>
     <header class="header" id="Home">
         <div class="container">
             <a href="#Home" class="logo">Tethys</a>
@@ -43,8 +46,10 @@
 
         <div class="content-overlay">
             <div class="container">
-                <h1 class="typewriter">Решаем задачи по техническому обеспечению</h1>
-                <p>Команда профессионалов</p>
+                <div class="slide-in-blurred-bottom animate-on-scroll">
+                    <h1>Решаем задачи по техническому обеспечению</h1>
+                    <p>Команда профессионалов</p>
+                </div>
             </div>
         </div>
     </section>
@@ -52,8 +57,8 @@
 
     <main class="container">
         <section class="hero">
-            <div class="container">
-                <h1>Tethys это:</h1>
+            <div class="">
+                <h1 class="slide-in-blurred-bottom animate-on-scroll">Tethys это:</h1>
                 <ul>
                     <li>Аренда профессионального звука, света, видео оборудования и сценических конструкций</li>
                     <li>Технический продакшн фестиваля Нашествие, Наши в городе, РГО</li>
@@ -74,15 +79,32 @@
         <section id="works" class="works">
             <div class="container">
                 <h2>Портфолио</h2>
-                <div class="grid">
-                    <a href="#" class="work-card">
-                        <img src="images/project1.jpg" alt="Проект 1">
-                        <h3>Название проекта</h3>
-                    </a>
-                    <!-- Добавьте больше карточек -->
+                <div class="mobile-carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <a href="#" class="work-card">
+                                <img src="images/project1.jpg" alt="Проект 1">
+                                <h3>Название проекта</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#" class="work-card">
+                                <img src="images/project2.jpg" alt="Проект 2">
+                                <h3>Название проекта</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#" class="work-card">
+                                <img src="images/project3.jpg" alt="Проект 3">
+                                <h3>Название проекта</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-dots"></div>
                 </div>
             </div>
         </section>
+
         <a href="#Home" class="back-to-top">
             <svg viewBox="0 0 24 24" width="24" height="24">
                 <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
@@ -101,6 +123,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    
+
 </body>
 </html>

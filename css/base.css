@@ -1,10 +1,12 @@
 /* Базовые стили */
 :root {
     --bg-light: #ffffff;
-    --text-light: #000000;
-    --bg-dark: #1a1a1a;
-    --text-dark: #ffffff;
-    --accent: #e10000;
+    --text-light: #121212;
+    --bg-dark: #121212;
+    --text-dark: rgb(0, 255, 255);
+    --accent: rgb(255, 106, 0, 0.3);
+    --shadow-light: 0 0 30px rgb(255, 106, 0, 0.3) inset;
+    --shadow-dark: 0 0 10px rgb(255, 106, 0) inset;
 }
 
 body {
@@ -29,6 +31,7 @@ body {
     :root {
         --bg-primary: var(--bg-dark);
         --text-primary: var(--text-dark);
+        --shadow-primary: var(--shadow-dark);
     }
 }
 
@@ -36,5 +39,6 @@ body {
     :root {
         --bg-primary: var(--bg-light);
         --text-primary: var(--text-light);
+        --shadow-primary: var(--shadow-light);
     }
 }
