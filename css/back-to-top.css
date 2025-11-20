@@ -5,7 +5,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--bg-primary);
+    background-color: transparent;
     color: var(--text-primary);
     border: none;
     cursor: pointer;
@@ -20,11 +20,17 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     user-select: none;
-    outline: 2px solid rgb(255, 106, 0);
+    outline: 2px solid var(--text-primary);
+    transform: scale(1);
 }
 
     .back-to-top:hover {
-        background-color: var(--accent);
+        transform: scale(1.1); /* Увеличение при наведении */
+        background-color: rgba(0, 0, 0, 0.1); /* Легкий фон при наведении */
+    }
+
+    .back-to-top:active{
+        transform: scale(0.9);
     }
 
     .back-to-top.active {
@@ -35,8 +41,8 @@
     .back-to-top svg {
         width: 24px;
         height: 24px;
+        transition: transform 0.2s ease;
     }
-
-/* Адаптация для мобильных */
-@media (max-width: 768px) {
-}
+    .back-to-top:active svg {
+        transform: scale(0.8); /* Дополнительная анимация иконки */
+    }

@@ -4,7 +4,7 @@
     width: 100%;
     outline: 2px solid;
     background: var(--bg-primary);
-    color: var(--text-primary) !important;
+    color: var(--text-primary);
     z-index: 1000;
     padding: 10px 0;
     transition: transform 0.3s ease-in-out;
@@ -17,15 +17,11 @@
         transform: translateY(0);
     }
 
-    .header .container {
+    .contact {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        align-items: center;
-    }
-
-    .phone-contact {
-        display: flex;
-        align-items: center;
+        flex-shrink: 0;
         gap: 8px;
     }
     .phone-number {
@@ -34,59 +30,64 @@
     }
     .phone-icon {
         display: none; /* По умолчанию скрыта */
-        width: 36px;
-        height: 36px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
         border-radius: 50%;
         transition: all 0.3s ease;
         color: var(--text-primary);
     }
-    .icon {
-        width: 20px;
-        height: 20px;
+    .phone-icon:hover {
+        background: rgba(0, 0, 0, 0.1);
     }
-    .logo {
-        font-family: 'Dancing Script', cursive;
+    .contact-icon {
+        display: flex;
         font-size: 30px;
-        font-weight: 100;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
+        border-radius: 50%;
+        transition: all 0.3s ease;
         color: var(--text-primary);
     }
-
-nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: var(--text-primary);
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: var(--accent);
-}
+    .contact-icon:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        gap: 30px;
+    }
+    nav a {
+        text-decoration: none;
+        color: var(--text-primary);
+        font-weight: 500;
+        transform: scale(1);
+        transition: color 0.3s, transform 0.3s ease;
+    }
+    nav a:hover {
+        transform: scale(1.1);
+    }
 
 /* Адаптация шапки для мобильных */
 @media (max-width: 1201px) {
-    .header .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 0 15px;
-    }
-
     .phone-number {
         display: none;
     }
 
     .phone-icon {
         display: flex;
-    }
-
-    .phone-icon:hover {
-        background: rgba(0, 0, 0, 0.1);
     }
 }
