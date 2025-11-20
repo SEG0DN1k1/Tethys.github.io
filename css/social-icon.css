@@ -1,0 +1,18 @@
+/* Эффекты для Telegram */
+.social-icon:hover .bi-telegram {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 136, 204, 0.5);
+    background: linear-gradient(135deg, #0095e6, #0088cc);
+}
+
+/* Эффекты для WhatsApp */
+.social-icon:hover .bi-whatsapp {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.5);
+    background: linear-gradient(135deg, #2fe071, #25D366);
+}
+
+/* Общий эффект подъема */
+.social-icon:hover {
+    transform: translateY(-3px);
+}

@@ -1,9 +1,7 @@
 /* Базовые стили */
 :root {
-    --bg-light: #ffffff;
-    --text-light: #121212;
-    --bg-dark: #121212;
-    --text-dark: rgb(0, 255, 255);
+    --bg: #ffffff;
+    --text: #121212;
     --accent: rgb(255, 106, 0, 0.3);
 }
 
@@ -12,8 +10,8 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -23,22 +21,5 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 10px;
-}
-
-/* Автоматическое определение темы */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-primary: var(--bg-dark);
-        --text-primary: var(--text-dark);
-        --shadow-primary: var(--shadow-dark);
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --bg-primary: var(--bg-light);
-        --text-primary: var(--text-light);
-        --shadow-primary: var(--shadow-light);
-    }
+    margin: 0 10px;
 }

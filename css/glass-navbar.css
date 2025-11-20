@@ -1,0 +1,37 @@
+.glass-navbar-custom {
+    background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.05)
+    ) !important;
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.glass-navbar-custom .container-fluid,
+.glass-navbar-custom .navbar-brand,
+.glass-navbar-custom .navbar-nav,
+.glass-navbar-custom .navbar-collapse {
+    background: transparent !important;
+}
+
+/* Для темной темы */
+[data-bs-theme="dark"] .glass-navbar-custom {
+    background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.1)
+    ) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+@supports not (backdrop-filter: blur(10px)) {
+    .glass-navbar-custom {
+        background: rgba(255, 255, 255, 0.9) !important;
+    }
+    [data-bs-theme="dark"] .glass-navbar-custom {
+        background: rgba(0, 0, 0, 0.8) !important;
+    }
+}

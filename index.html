@@ -1,174 +1,95 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tethys</title>
-    <link rel="stylesheet" href="css/slide-in-blurred-bottom.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/social-icon.css">
+    <link rel="stylesheet" href="css/glass-navbar.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/works.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/back-to-top.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-<body>
-    <div id="Home">
-        <header class="header">
-            <div class="container">
-                <a href="#Home" class="logo">
-                    <img src="images/photo_5257969547715743375_x.jpg" height="50">
-                </a>
-
-                <!-- Гамбургер-кнопка -->
-                <button class="menu-toggle" aria-label="Открыть меню">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-
-
-                <!-- Десктопная версия -->
-                <nav class="desktop-nav">
-                    <a href="#works">Работы</a>
-                    <a href="#works">Работы</a>
-                    <a href="#works">Работы</a>
-                </nav>
-                <div class="desktop-contact">
-                    <span class="phone-number">+7 (929) 954-18-74</span>
-                    <div class="contact-icons">
-                        <a href="tel:+79299541874" class="phone-icon" aria-label="Phone">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                        <a href="https://t.me/SEG0DN1k_1" class="contact-icon" aria-label="Telegram" target="_blank">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="https://wa.me/79299541874" class="contact-icon" aria-label="WhatsApp" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-        </header>
-        <!-- Навигация и контакты -->
-        <section class="container">
-            <div class="mobile-menu">
-                <nav class="mobile-nav">
-                    <a href="#works">Работы</a>
-                    <a href="#works">Работы</a>
-                    <a href="#works">Работы</a>
-                </nav>
-                <div class="mobile-contact">
-                    <a href="tel:+79299541874" class="social-icon" aria-label="Phone">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="https://t.me/SEG0DN1k_1" class="social-icon" aria-label="Telegram" target="_blank">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="https://wa.me/79299541874" class="social-icon" aria-label="WhatsApp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="video-background">
-            <video autoplay muted loop playsinline class="bg-video">
-                <source src="videos/BGVideo.mp4">
-            </video>
-
-            <div class="content-overlay">
-                <div class="container">
-                    <div class="slide-in-blurred-bottom animate-on-scroll">
-                        <h1>Решаем задачи по техническому обеспечению</h1>
-                        <p>Команда профессионалов</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <main class="container">
-            <section class="hero">
-                <div class="">
-                    <h1 class="slide-in-blurred-bottom animate-on-scroll">Tethys это:</h1>
-                    <ul>
-                        <li>Аренда профессионального звука, света, видео оборудования и сценических конструкций</li>
-                        <li>Технический продакшн фестиваля Нашествие, Наши в городе, РГО</li>
-                        <li>Создание технических концепций и визуализация проектов</li>
-                        <li>Комплексное техническое обеспечение мероприятий</li>
-                    </ul>
-                    <div></div>
-                    <h1>В Tethys мы:</h1>
-                    <ul>
-                        <li>Изучаем цели мероприятия и предлагаем варианты их реализации</li>
-                        <li>Беремся за сложные проекты, используя интересные решения</li>
-                        <li>Выполняем задачи клиента, а не сдаем в аренду «железки»</li>
-                        <li>Бережем бюджет клиента и не навязываем лишнего</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="works" class="works">
-                <div class="container">
-                    <h2>Портфолио</h2>
-                    <div class="mobile-carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <a href="#" class="work-card">
-                                    <img src="images/project1.jpg" alt="Проект 1">
-                                    <h3>Название проекта</h3>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#" class="work-card">
-                                    <img src="images/project2.jpg" alt="Проект 2">
-                                    <h3>Название проекта</h3>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="#" class="work-card">
-                                    <img src="images/project3.jpg" alt="Проект 3">
-                                    <h3>Название проекта</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="carousel-dots"></div>
-                    </div>
-                </div>
-            </section>
-
-            <a href="#Home" class="back-to-top">
-                <svg viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
-                </svg>
+<body style="background-image: url(images/project1.jpg); background-repeat: no-repeat; background-size: cover;">
+<div id="home"></div>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top p-3 glass-navbar-custom" style="border-radius: 20px;">
+        <div class="container-fluid bg-transparent">
+            <!-- Логотип -->
+            <a class="navbar-brand" href="#home">
+                <img src="images/Logo.png" alt="Логотип" height="50">
             </a>
-        </main>
-
-
-        <footer id="contacts" class="footer">
-            <div class="container">
-                <p>© 2025</p>
-                <div class="social">
-                    <a href="mailto:example@mail.com">Email</a>
-                    <a href="https://t.me/username">Telegram</a>
+            
+            <!-- Мобильное меню -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Контент справа -->
+            <div class="collapse navbar-collapse" id="navbarHeader">
+                <div class="navbar-nav ms-auto align-items-center">
+                    <!-- Соцсети -->
+                    <a href="https://t.me/your_profile" class="social-icon me-4" target="_blank"
+                       style="display: inline-block; transition: all 0.3s ease;">
+                        <i class="bi bi-telegram" style="
+                        font-size: 1.8rem;
+                        color: white;
+                        background: #0088cc;
+                        border-radius: 20%;
+                        padding: 10px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 48px;
+                        height: 48px;
+                        box-shadow: 0 3px 10px rgba(0, 136, 204, 0.3);
+                        transition: all 0.3s ease;">
+                        </i>
+                    </a>
+                    <a href="https://wa.me/79001234567" class="social-icon me-4" target="_blank" style="display: inline-block; transition: transform 0.3s ease;">
+                        <i class="bi bi-whatsapp" style="
+                        font-size: 1.8rem;
+                        color: white;
+                        background: #25D366;
+                        border-radius: 20%;
+                        padding: 10px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 48px;
+                        height: 48px;
+                        box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+                        transition: all 0.3s ease;">
+                        </i>
+                    </a>
+                    <!-- Телефон -->
+                    <div style="align-items: center; display: flex; justify-content: space-around;">
+                        <i class="bi bi-telephone" style="font-size: 1.5rem"></i>
+                        <span class="text-decoration-none text-dark">+7 (900) 123-45-67</span>
+                    </div>
                 </div>
             </div>
-        </footer>
-        <script src="js/script.js"></script>
-        <script src="js/MobileMenuScript.js"></script>
-
+        </div>
+    </nav>
+</header>
+<main>
+    <pre>
+        hsdjglkshdglksd
+        sdfhgsdfhs
+        sdhsddhsd
+        sdhsdhsd
+        sdhsdhsd
+        sdhsddfsdhgsdh
+        dshsda sdahg asd
+        sdhgsd
+    </pre>
+</main>
+<footer>
+    
+</footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </html>

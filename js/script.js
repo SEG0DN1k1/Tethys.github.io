@@ -1,5 +1,4 @@
-﻿// Плавный скролл для якорных ссылок
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+﻿document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -9,13 +8,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('.header');
     const backToTop = document.querySelector('.back-to-top');
     const SCROLL_THRESHOLD = 50;
     let lastScroll = 0;
 
     window.addEventListener('scroll', function () {
-        const currentScroll = window.pageYOffset;
+        const currentScroll = window.scrollY;
         const scrollDelta = Math.abs(currentScroll - lastScroll);
 
         if (currentScroll <= SCROLL_THRESHOLD) {
