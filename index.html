@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,115 +21,154 @@
 
 <body>
     <div id="Home">
-    <header class="header">
-        <div class="container">
-            <a href="#Home" class="logo">
-                <img src="images/photo_5257969547715743375_x.jpg" height="50">
-            </a>
-            <nav>
-                <a href="Page1.html">Работы</a>
-                <a href="#works">Работы</a>
-                <a href="#works">Работы</a>
-            </nav>
-            <div class="contact">
-                <span class="phone-number">+7 (929) 954-18-74</span>
-                <a href="tel:+79299541874" class="phone-icon" aria-label="Phone" target="_blank">
-                    <i class="fas fa-phone"></i>
-                </a>
-                <a href="https://t.me/SEG0DN1k_1" class="contact-icon" aria-label="Telegram" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                </a>
-                <a href="https://wa.me/79299541874" class="contact-icon" aria-label="WhatsApp" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <section class="video-background">
-        <video autoplay muted loop playsinline class="bg-video">
-            <source src="videos/BGVideo.mp4">
-        </video>
-
-        <div class="content-overlay">
+        <header class="header">
             <div class="container">
-                <div class="slide-in-blurred-bottom animate-on-scroll">
-                    <h1>Решаем задачи по техническому обеспечению</h1>
-                    <p>Команда профессионалов</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <a href="#Home" class="logo">
+                    <img src="images/photo_5257969547715743375_x.jpg" height="50">
+                </a>
+
+                <!-- Гамбургер-кнопка -->
+                <button class="menu-toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
 
-    <main class="container">
-        <section class="hero">
-            <div class="">
-                <h1 class="slide-in-blurred-bottom animate-on-scroll">Tethys это:</h1>
-                <ul>
-                    <li>Аренда профессионального звука, света, видео оборудования и сценических конструкций</li>
-                    <li>Технический продакшн фестиваля Нашествие, Наши в городе, РГО</li>
-                    <li>Создание технических концепций и визуализация проектов</li>
-                    <li>Комплексное техническое обеспечение мероприятий</li>
-                </ul>
-                <div></div>
-                <h1>В Tethys мы:</h1>
-                <ul>
-                    <li>Изучаем цели мероприятия и предлагаем варианты их реализации</li>
-                    <li>Беремся за сложные проекты, используя интересные решения</li>
-                    <li>Выполняем задачи клиента, а не сдаем в аренду «железки»</li>
-                    <li>Бережем бюджет клиента и не навязываем лишнего</li>
-                </ul>
-            </div>
-        </section>
 
-        <section id="works" class="works">
-            <div class="container">
-                <h2>Портфолио</h2>
-                <div class="mobile-carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <a href="#" class="work-card">
-                                <img src="images/project1.jpg" alt="Проект 1">
-                                <h3>Название проекта</h3>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#" class="work-card">
-                                <img src="images/project2.jpg" alt="Проект 2">
-                                <h3>Название проекта</h3>
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#" class="work-card">
-                                <img src="images/project3.jpg" alt="Проект 3">
-                                <h3>Название проекта</h3>
-                            </a>
-                        </div>
+                <!-- Десктопная версия -->
+                <nav class="desktop-nav">
+                    <a href="#works">Работы</a>
+                    <a href="#works">Работы</a>
+                    <a href="#works">Работы</a>
+                </nav>
+                <div class="desktop-contact">
+                    <span class="phone-number">+7 (929) 954-18-74</span>
+                    <div class="contact-icons">
+                        <a href="tel:+79299541874" class="phone-icon" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://t.me/SEG0DN1k_1" class="contact-icon" aria-label="Telegram" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/79299541874" class="contact-icon" aria-label="WhatsApp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
-                    <div class="carousel-dots"></div>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- Навигация и контакты -->
+        <section class="container">
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <a href="#works">Работы</a>
+                    <a href="#works">Работы</a>
+                    <a href="#works">Работы</a>
+                </nav>
+                <div class="mobile-contact">
+                    <a href="tel:+79299541874" class="social-icon" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://t.me/SEG0DN1k_1" class="social-icon" aria-label="Telegram" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://wa.me/79299541874" class="social-icon" aria-label="WhatsApp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <a href="#Home" class="back-to-top">
-            <svg viewBox="0 0 24 24" width="24" height="24">
-                <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
-            </svg>
-        </a>
-    </main>
-    
 
-    <footer id="contacts" class="footer">
-        <div class="container">
-            <p>© 2025</p>
-            <div class="social">
-                <a href="mailto:example@mail.com">Email</a>
-                <a href="https://t.me/username">Telegram</a>
+        <section class="video-background">
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="videos/BGVideo.mp4">
+            </video>
+
+            <div class="content-overlay">
+                <div class="container">
+                    <div class="slide-in-blurred-bottom animate-on-scroll">
+                        <h1>Решаем задачи по техническому обеспечению</h1>
+                        <p>Команда профессионалов</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
+        </section>
+
+
+        <main class="container">
+            <section class="hero">
+                <div class="">
+                    <h1 class="slide-in-blurred-bottom animate-on-scroll">Tethys это:</h1>
+                    <ul>
+                        <li>Аренда профессионального звука, света, видео оборудования и сценических конструкций</li>
+                        <li>Технический продакшн фестиваля Нашествие, Наши в городе, РГО</li>
+                        <li>Создание технических концепций и визуализация проектов</li>
+                        <li>Комплексное техническое обеспечение мероприятий</li>
+                    </ul>
+                    <div></div>
+                    <h1>В Tethys мы:</h1>
+                    <ul>
+                        <li>Изучаем цели мероприятия и предлагаем варианты их реализации</li>
+                        <li>Беремся за сложные проекты, используя интересные решения</li>
+                        <li>Выполняем задачи клиента, а не сдаем в аренду «железки»</li>
+                        <li>Бережем бюджет клиента и не навязываем лишнего</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="works" class="works">
+                <div class="container">
+                    <h2>Портфолио</h2>
+                    <div class="mobile-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <a href="#" class="work-card">
+                                    <img src="images/project1.jpg" alt="Проект 1">
+                                    <h3>Название проекта</h3>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" class="work-card">
+                                    <img src="images/project2.jpg" alt="Проект 2">
+                                    <h3>Название проекта</h3>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" class="work-card">
+                                    <img src="images/project3.jpg" alt="Проект 3">
+                                    <h3>Название проекта</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-dots"></div>
+                    </div>
+                </div>
+            </section>
+
+            <a href="#Home" class="back-to-top">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+                </svg>
+            </a>
+        </main>
+
+
+        <footer id="contacts" class="footer">
+            <div class="container">
+                <p>© 2025</p>
+                <div class="social">
+                    <a href="mailto:example@mail.com">Email</a>
+                    <a href="https://t.me/username">Telegram</a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/MobileMenuScript.js"></script>
 
 </body>
+
 </html>
