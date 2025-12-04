@@ -22,7 +22,6 @@ body {
     background-position: center center;
     background-attachment: fixed;
     position: relative;
-    min-height: 100vh; /* Важно для мобильных */
 }
 
 body::before {
