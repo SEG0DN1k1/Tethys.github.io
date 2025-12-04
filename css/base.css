@@ -27,7 +27,7 @@ body {
 
 body::before {
     content: '';
-    position: absolute; /* Меняем fixed на absolute */
+    position: fixed; /* Меняем fixed на absolute */
     top: 0;
     left: 0;
     width: 100%;
