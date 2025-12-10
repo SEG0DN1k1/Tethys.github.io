@@ -1,0 +1,12 @@
+.btn-custom {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #502E01; /* Ваш цвет */
+    --bs-btn-border-color: #502E01;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5A6770; /* Цвет при наведении */
+    --bs-btn-hover-border-color: #5A6770;
+    --bs-btn-focus-shadow-rgb: 37, 99, 235;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #012945;
+    --bs-btn-active-border-color: #012945;
+}

@@ -8,20 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/btn-custom.css">
+    <link rel="stylesheet" href="css/card-custom.css">
     <link rel="stylesheet" href="css/social-icon.css">
-    <link rel="stylesheet" href="css/glass-navbar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 <div id="home"></div>
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top p-3 glass-navbar-custom" style="border-radius: 20px;">
+    <nav class="navbar navbar-expand-lg fixed-top p-3 header">
         <div class="container-fluid bg-transparent">
             <!-- Логотип -->
             <a class="navbar-brand" href="#home">
                 <img src="images/Logo.png" alt="Логотип" height="50">
             </a>
-            <a href="#Project1" class="navbar-brand">Свадьба</a>
+            <a href="#Project1" class="navbar-brand text-white">Свадьба</a>
             
             <!-- Мобильное меню -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader">
@@ -67,70 +73,92 @@
                     </a>
                     <!-- Телефон -->
                     <div style="align-items: center; display: flex; justify-content: space-around;">
-                        <i class="bi bi-telephone" style="font-size: 1.5rem"></i>
-                        <span class="text-decoration-none">+7 (900) 123-45-67</span>
+                        <i class="bi bi-telephone text-white" style="font-size: 1.5rem"></i>
+                        <span class="text-decoration-none text-white">+7 (900) 123-45-67</span>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+    
 </header>
 <main>
+    <section class="hero-banner" aria-label="Главный баннер">
+        <div class="hero-background">
+            <!-- Картинка теперь добавляется как фон этого div через CSS -->
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                    <h1 class="display-4 fw-bold mb-4">Техническое обеспечение мероприятий</h1>
+                    <h2 class="display-6 fw-bold mb-4">Звук, свет, сцены, экраны</h2>
+                    <p class="lead mb-5">Мы обеспечиваем безупречную техническую часть мероприятий любого масштаба</p>
+                    <a href="#contact" class="btn btn-dark btn-lg px-5 py-3">Обсудить проект</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container-fluid mt-5 pt-5">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h1 class="display-4 fw-bold mb-4 text-white">Создание и продвижение сайтов</h1>
-                <p class="lead mb-4 text-white">Мы создаем современные и эффективные веб-решения для бизнеса</p>
-
                 <div class="row mt-5">
                     <div class="col-md-4 mb-4">
-                        <div class="card glass-card h-100 border-0">
+                        <div class="card card-custom h-100">
                             <div class="card-body">
-                                <h3 class="h5">Разработка сайтов</h3>
-                                <p>Создаем сайты любой сложности - от лендингов до интернет-магазинов</p>
+                                <h3 class="h5">Профессиональное оборудование</h3>
+                                <p>Звук, свет, LED-экраны, сценические конструкции. Современный парк техники для решения любых задач</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card glass-card h-100 border-0">
+                        <div class="card card-custom h-100">
                             <div class="card-body">
-                                <h3 class="h5">Продвижение</h3>
-                                <p>Комплексное продвижение сайтов в поисковых системах</p>
+                                <h3 class="h5">Полный цикл услуг</h3>
+                                <p>Доставка, монтаж, демонтаж. Организуем весь процесс «под ключ» – вы занимаетесь творчеством, мы берем на себя технику</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card glass-card h-100 border-0">
+                        <div class="card card-custom h-100">
                             <div class="card-body">
-                                <h3 class="h5">Поддержка</h3>
-                                <p>Техническая поддержка и обслуживание сайтов</p>
+                                <h3 class="h5">Работа специалистов</h3>
+                                <p>Наши специалисты по свету работают на площадке</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="container-fluid mt-5 py-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="row align-items-center">
+                                <!-- Левая колонка с фотографиями -->
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                    <div class="d-flex flex-column gap-3"> <!-- Контейнер для фото -->
+                                        <img src="images/About_Us.jpg" alt="О нас" class="img-fluid rounded" style="height: 280px; object-fit: cover;">
+                                        <img src="images/About_Us2.jpg" alt="О нас2" class="img-fluid rounded" style="height: 280px; object-fit: cover;">
+                                    </div>
+                                </div>
 
-                <div class="mt-5">
-                    <h2 class="h3 mb-4 text-white">Почему выбирают нас</h2>
-                    <div class="row text-start">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled text-white">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Индивидуальный подход к каждому проекту</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Современные технологии и инструменты</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Опытная команда специалистов</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled text-white">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Прозрачные условия сотрудничества</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Соблюдение сроков выполнения работ</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Гарантия качества и результата</li>
-                            </ul>
+                                <!-- Правая колонка с текстом -->
+                                <div class="col-md-8">
+                                    <div class="about-text ps-md-4"> <!-- Добавлен отступ слева -->
+                                        <h2 class="display-5 fw-bold text-primary mb-4">О НАС</h2>
+                                        <p class="lead mb-4">
+                                            Наша главная цель сделать так, чтобы заказчик остался доволен результатом сотрудничества и рекомендовал нас своим коллегам и друзьям.
+                                        </p>
+
+                                        <p class="mb-4">
+                                            Мы благодарны многим агентствам за то, что выбрали нас, и предлагаем выгодные условия сотрудничества специалистам в области организации мероприятий. Универсальность, гибкость и профессионализм нашей команды помогут достичь нужного результата!
+                                        </p>
+
+                                        <p class="mb-0">
+                                            Обращаясь к нам, вы гарантированно получите индивидуальный подход и квалифицированный сервис в решении ваших задач.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="mt-5">
-                    <a href="#contact" class="btn btn-primary btn-lg px-5 py-3">Обсудить проект</a>
                 </div>
             </div>
         </div>
@@ -138,6 +166,7 @@
     <div id="Project1" class="container-fluid mt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
+                <h1 class="display-4 fw-bold mb-4 text-center">Наши проекты</h1>
                 <div id="imageCarousel1" class="carousel slide" data-bs-ride="carousel">
                     <!-- Индикаторы -->
                     <div class="carousel-indicators">
@@ -298,6 +327,31 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="visually-hidden">Следующий</span>
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="mt-5">
+                    <h2 class="h3 mb-4 ">Почему выбирают нас</h2>
+                    <div class="row text-start">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled ">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Индивидуальный подход к каждому мероприятию</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Современное оборудование и технологии</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Соблюдение сроков выполнения работ</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled ">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Опытная команда</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Надежности техники</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Гарантия качества</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
